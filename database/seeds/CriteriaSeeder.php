@@ -15,45 +15,63 @@ class CriteriaSeeder extends Seeder
     {
         DB::table('criterias')->insert([
             [
+                'nama' => 'Bersifat Mendidik',
+                'tipe' => 'benefit',
+                'bobot1' => null,
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ], [
                 'nama' => 'Menghibur',
                 'tipe' => 'benefit',
-                'bobot' => 0.937,
+                'bobot2' => null,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ], [
-                'nama' => 'Volume material timbunan',
-                'tipe' => 'cost',
-                'bobot' => 0.701,
-                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
-            ], [
-                'nama' => 'Luas daerah yang akan dibebaskan',
-                'tipe' => 'cost',
-                'bobot' => 1.847,
-                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
-            ], [
-                'nama' => 'Volume tampungan efektif',
+                'nama' => 'Bersifat kreatif',
                 'tipe' => 'benefit',
-                'bobot' => 0.982,
+                'bobot3' => null,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ], [
-                'nama' => 'Lama operasi',
+                'nama' => 'Mengandung Kekerasan',
+                'tipe' => 'cost',
+                'bobot4' => null,
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ], [
+                'nama' => 'Mengandung Kata-Kata Kasar',
+                'tipe' => 'cost',
+                'bobot5' => null,
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ], [
+                'nama' => 'Mengandung Unsur Pornografi',
+                'tipe' => 'cost',
+                'bobot6' => null,
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ], [
+                'nama' => 'Kualitas Tayangan',
                 'tipe' => 'benefit',
-                'bobot' => 1.173,
+                'bobot7' => null,
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],[
+                'nama' => 'Ketersidaan Opsi Bahasa',
+                'tipe' => 'cost',
+                'bobot8' => null,
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+            ],[
+                'nama' => 'Durasi Tayang',
+                'tipe' => 'benefit',
+                'bobot9' => null,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ], [
-                'nama' => 'Harga air/m3',
-                'tipe' => 'cost',
-                'bobot' => 0.953,
-                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-                'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
-            ], [
-                'nama' => 'Akses jalan menuju site bendungan',
-                'tipe' => 'cost',
-                'bobot' => 0.752,
+                'nama' => 'Menambah Wawasan',
+                'tipe' => 'benefit',
+                'bobot10' => null,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
             ]

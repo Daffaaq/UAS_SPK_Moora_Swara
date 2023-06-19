@@ -17,7 +17,16 @@ class CreateCriteriasTable extends Migration
             $table->id();
             $table->string('nama');
             $table->set('tipe', ['benefit', 'cost']);
-            $table->float('bobot');
+            $table->float('bobot1')->nullable();
+            $table->float('bobot2')->nullable();
+            $table->float('bobot3')->nullable();
+            $table->float('bobot4')->nullable();
+            $table->float('bobot5')->nullable();
+            $table->float('bobot6')->nullable();
+            $table->float('bobot7')->nullable();
+            $table->float('bobot8')->nullable();
+            $table->float('bobot9')->nullable();
+            $table->float('bobot10')->nullable();
             $table->timestamps();
         });
     }
